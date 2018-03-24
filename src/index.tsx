@@ -1,9 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { Hello } from "./components/Hello";
+import { Grid } from "./Grid";
+import { GridComponent } from "./components/GridComponent";
 
+
+var model = new Grid(10);
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
+    <GridComponent  />,
     document.getElementById("example")
 );
